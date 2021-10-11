@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import numeral from "numeral";
+    numeral.localeData().delimiters.thousands = ' ';
     import { getNiiFiCirculatingSupply } from "./../ethereum";
 
     let price = 0;
@@ -14,6 +15,7 @@
         const { niifi } = await (await fetch(priceAPI)).json();
         marketCap = numeral(circulatingSupply * niifi.usd).format("0.00a");
         price = numeral(niifi.usd).format("0.000a");
+        circulatingSupply = numeral(circulatingSupply).format("0,0.");
     });
 </script>
 
