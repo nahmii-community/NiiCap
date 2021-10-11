@@ -1,6 +1,6 @@
 # NiiCap
 
-NiiCap is a small community-driven app to display statistics for Nahmii powered dApps.
+NiiCap is a small community-driven app to display statistics for Nahmii powered dApps. A live version can be found [here](https://nahmii-community.github.io/NiiCap/).
 
 ## Developing
 
