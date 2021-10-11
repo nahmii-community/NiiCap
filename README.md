@@ -1,24 +1,10 @@
-# create-svelte
+# NiiCap
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
+NiiCap is a small community-driven app to display statistics for Nahmii powered dApps.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned this repository and installed dependencies with `npm install` (or `pnpm install`), start a development server:
 
 ```bash
 npm run dev
@@ -29,10 +15,27 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+This app uses the [adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) sveltekit adapter. For more details on sveltekit adapters see: [adapters](https://kit.svelte.dev/docs#adapters). To build this project as a static web app:
 
 ```bash
 npm run build
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+> You can preview the statically built app with `npm run preview`.
+
+## Deploying
+
+To deploy this app to Github pages:
+
+```bash
+npm run deploy
+```
+
+## Contributing
+
+To contribute, clone this repository and create a new feature branch.
+Once the new feature is implemented, create a new pull request with a description of the added changes.
+
+## Issues
+
+Feel free to open a feature request or report a bug through the issues page!
