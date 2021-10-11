@@ -8,7 +8,7 @@ const config = {
 		target: '#svelte',
 		adapter: adapter(),
 		paths: {
-			base: dev ? '' : '/niicap',
+			base: dev ? '' : '/NiiCap',
 		}
 	}
 };
